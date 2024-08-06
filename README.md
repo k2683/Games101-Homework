@@ -24,13 +24,20 @@ M_{ortho} = \begin{bmatrix}
 $$
 ## 透视投影(perspective projection)
 • 把视锥体(frustum)压缩成立方体
-$$
+```math
 M_{\text{persp} \to \text{ortho}} = \begin{pmatrix}
 n & 0 & 0 & 0 \\
 0 & n & 0 & 0 \\
 0 & 0 & n+f & -nf \\
 0 & 0 & 1 & 0
 \end{pmatrix}
-$$
+```
+[矩阵推导](正交投影.pdf)
 
 • 进行正交投影
+## 视角变换
+    float t = -n * tan(fov / 2.);
+    float b = -t;
+    float r = aspect_ratio * t;
+    float l = -r;
+[图像说明](视角变换.pdf)
