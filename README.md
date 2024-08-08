@@ -77,3 +77,5 @@ Normal（N）: 表面的法线向量。
     point += kn * normal * payload.texture->getColor(u, v).norm();
 
 然后再对每个点运用光照模型即可
+
+作业最后的双线性插值是简单的，就不多赘述了
