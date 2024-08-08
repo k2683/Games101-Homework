@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ffc7724b-90bb-4cdc-8973-9b155c310c83)# 判断光线是否与包围盒相交
+# 判断光线是否与包围盒相交
 在x,y,z三个维度上寻找 $t_{min}$ 和 $t_{max}$
 
 三个维度里最大的 $t_{min}$为入射时间，最小的 $t_{max}$ 为出射时间
