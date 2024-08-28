@@ -30,6 +30,15 @@ Normal（N）: 表面的法线向量。
 ```
 两个方程两个未知数（T和B）就可以求解
 
+计算出T和B的中间值以后将TB与N进行正交化得到最终的BTN矩阵
+$$
+t_\perp = \text{nrm}(t - (t \cdot n) n)
+$$
+
+$$
+b_\perp = \text{nrm}(b - (b \cdot n)n - (b \cdot t_\perp) t_\perp). \quad (\sigma(n \times t_\perp))
+$$
+
 计算出TBN三个轴后，这三个轴对于面内所有三角形的所有点是共用的，所以一个面只需要找一个三角形计算TBN即可
 # 法线贴图
 常见的法线贴图处理方式
