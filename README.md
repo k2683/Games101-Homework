@@ -31,6 +31,7 @@ Normal（N）: 表面的法线向量。
 两个方程两个未知数（T和B）就可以求解
 
 计算出T和B的中间值以后将TB与N进行正交化得到最终的BTN矩阵
+
 $$
 t_\perp = \text{nrm}(t - (t \cdot n) n)
 $$
